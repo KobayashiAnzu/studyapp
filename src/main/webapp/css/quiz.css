@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+body{
+	width:300px;
+    margin-right: auto;
+    margin-left : auto;
+}
+
+.article{
+	 border-radius: 10px 10px 10px 10px;
+	 margin-bottom:10px;
+}

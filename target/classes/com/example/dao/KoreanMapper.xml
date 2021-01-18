@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.KoreanDao">
+
+	<!-- 全件取得 -->
+	<select id="selectAll" resultType="com.example.domain.Korean">
+		SELECT * FROM korean
+	</select>
+
+	<!-- ランダムに全件取得 -->
+	<select id="selectByRandom"
+		resultType="com.example.domain.Korean">
+		SELECT * FROM korean ORDER BY RAND();
+	</select>
+
+	<!-- ID別に取得 -->
+	<select id="selectById" resultType="com.example.domain.Korean"
+		parameterType="int">
+		SELECT * FROM korean
+		WHERE id = #{id}
+	</select>
+
+    <!-- カテゴリ別に取得 -->
+	<select id="selectByCategory" resultType="com.example.domain.Korean"
+	    parameterType="string">
+	    SELECT * FROM korean
+	    WHERE category = #{category}
+	</select>
+
+	<!-- ページネーション関係 -->
+	<select id="count" resultType="long">
+		SELECT COUNT(*) FROM korean
+	</select>
+
+	<select id="selectLimited"
+		resultType="com.example.domain.Korean">
+		SELECT * FROM korean
+		LIMIT #{offset}, #{num}
+	</select>
+
+	<!-- 追加 -->
+	<insert id="insert" parameterType="com.example.domain.Korean"
+		useGeneratedKeys="true">
+		INSERT INTO korean
+		(name, reading, mean, category)
+		VALUES
+		(#{name}, #{reading}, #{mean}, #{category})
+	</insert>
+
+	<!-- 更新 -->
+	<update id="update" parameterType="com.example.domain.Korean">
+		UPDATE korean SET
+		name =
+		#{name}, reading = #{reading}, mean = #{mean}, category = #{category}
+		WHERE id = #{id}
+	</update>
+
+	<!-- 削除 -->
+	<delete id="delete" parameterType="int">
+		DELETE FROM korean
+		WHERE id =
+		#{id}
+	</delete>
+
+</mapper>
