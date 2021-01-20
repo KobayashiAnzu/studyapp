@@ -14,6 +14,17 @@
 		WHERE id = #{id}
 	</select>
 
+	<!-- 日付別に取得 -->
+	<select id="selectByCreated" resultType="com.example.domain.Diary"
+		parameterType="date">
+		<![CDATA[
+		SELECT * FROM diary
+		WHERE created >= #{created}
+        AND created < #{created}
+        ]]>
+    </select>
+
+
 	<!-- 追加 -->
 	<insert id="insert" parameterType="com.example.domain.Diary"
 		useGeneratedKeys="true">
@@ -27,7 +38,7 @@
 	<update id="update" parameterType="com.example.domain.Diary">
 		UPDATE diary SET
 		title =
-		#{title}, contents = #{contents}
+		#{title}, contents = #{contents}, feeling = #{feeling}
 		WHERE id = #{id}
 	</update>
 

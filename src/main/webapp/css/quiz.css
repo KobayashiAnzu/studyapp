@@ -1,12 +1,25 @@
 @charset "utf-8";
 
-body{
-	width:300px;
-    margin-right: auto;
-    margin-left : auto;
-}
 
 .article{
 	 border-radius: 10px 10px 10px 10px;
 	 margin-bottom:10px;
+}
+
+#headerbg {
+background:#7ab8bf;
+width:100%;
+min-width:1000px;
+}
+/* ヘッダー*/
+#header       {
+width: 940px;
+height:60px;
+margin-right: auto;
+margin-left: auto;
+}
+
+.home{
+	color:white;
+	margin-top:40px;
 }

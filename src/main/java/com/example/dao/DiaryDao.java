@@ -1,5 +1,6 @@
 package com.example.dao;
 
+import java.util.Date;
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
@@ -13,6 +14,10 @@ public interface DiaryDao {
 
 	//ID別取得
 	Diary selectById(Integer id)throws Exception;
+
+	//日付別取得
+	List<Diary> selectByCreated(Date created) throws Exception;
+
 
 	//追加
 	void insert(Diary diary) throws Exception;

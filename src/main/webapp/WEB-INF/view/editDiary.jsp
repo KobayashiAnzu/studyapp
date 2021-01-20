@@ -13,6 +13,19 @@
 			<form:input path="title" />
 		</p>
 		<p>
+			気分：
+			<select name="feeling">
+			 <option value="&#x1f600;">&#x1f600;</option>
+			 <option value="&#x1f923;">&#x1f923;</option>
+			 <option value="&#x1f637;">&#x1f637;</option>
+			 <option value="&#x1f922;">&#x1f922;</option>
+			 <option value="&#x1f632;">&#x1f632;</option>
+			 <option value="&#x1f630;">&#x1f630;</option>
+			 <option value="&#x1f62d;">&#x1f62d;</option>
+			 <option value="&#x1f621;">&#x1f621;</option>
+			</select>
+		</p>
+		<p>
 			本文：
 			<form:input path="contents" />
 		</p>

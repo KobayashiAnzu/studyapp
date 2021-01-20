@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>編集</title>
+<link rel="stylesheet" href="css/edit.css">
 </head>
 <body>
 <form:form action="" method="post" modelAttribute="korean">

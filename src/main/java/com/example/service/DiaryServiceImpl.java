@@ -1,5 +1,6 @@
 package com.example.service;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,11 @@ public class DiaryServiceImpl implements DiaryService{
         return diaryDao.selectById(id);
 	}
 
+	@Override
+	public List<Diary> getDiaryByCreated(Date created) throws Exception {
+		return diaryDao.selectByCreated(created);
+	}
+
 	//追加
 	@Override
 	public void addDiary(Diary diary) throws Exception {
@@ -47,5 +53,9 @@ public class DiaryServiceImpl implements DiaryService{
 	public void deleteDiary(Integer id) throws Exception {
 		diaryDao.delete(id);
 	}
+
+
+
+
 
 }

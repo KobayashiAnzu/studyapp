@@ -5,15 +5,19 @@
 <head>
 <meta charset="UTF-8">
 <title>単語クイズ</title>
+
 <link rel="stylesheet" href="css/quiz.css">
 </head>
 <body>
+
+
+<main>
 <c:forEach items="${koreans}" var="korean">
 <div id="sampleBox" class="article" style="width: 300px; border: 1px solid #000; padding:10px;">
 
 　　<p><c:out value="${korean.name}" /></p>
 　　
-　　<div style="border:3px solid blue;">
+　　<div class="answer" style="border:3px solid #ffff00; border-radius: 10px 10px 10px 10px;">
 　　<p><c:out value="${korean.mean}" /></p>
 
     </div>
@@ -53,7 +57,7 @@
 		| <a href="?page=<c:out value="${page + 1}" />">次</a>
 	</c:otherwise>
 </c:choose>
-
+</main>
  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
  <script>
  $(document).ready(function(){

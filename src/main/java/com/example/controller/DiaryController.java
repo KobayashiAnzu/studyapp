@@ -31,6 +31,7 @@ public class DiaryController {
 		return "diary";
 	}
 
+
 /**
  * 日記の編集
  */
