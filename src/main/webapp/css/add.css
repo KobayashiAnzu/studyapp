@@ -1,0 +1,34 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+
+*{
+	font-family: 'Kosugi Maru', sans-serif;
+}
+
+/* 初期化*/
+ul {
+    list-style-type: none;
+    }
+    a {
+    text-decoration: none;
+    color: #000;
+    }
+
+body{
+	background:#b4dbd3;
+	text-align:center;
+	padding-top:150px;
+}
+
+.in{
+	 height:25px;
+	 margin-bottom:15px;
+     border-radius: 10px 10px 10px 10px;
+     border-color:#d3dee0;
+}
+
+img{
+	margin-top:30px;
+	text-align:center;
+	width:450px;
+}

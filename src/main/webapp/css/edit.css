@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+
+*{
+	font-family: 'Kosugi Maru', sans-serif;
+	color:gray;
+}
+
+a{
+	color:white;
+
+}
+
+/* 初期化*/
+ul {
+    list-style-type: none;
+    }
+    a {
+    text-decoration: none;
+    color: #000;
+    }
+
+body{
+	background:#b4dbd3;
+	text-align:center;
+	padding-top:150px;
+}
+
+.in{
+	 height:25px;
+	 margin-bottom:15px;
+     border-radius: 10px 10px 10px 10px;
+     border-color:#d3dee0;
+}
+
+.btn-square-so-pop {
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #53b8a7;/*色*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+
+  border: solid 2px #469c8d;/*線色*/
+}
+
+.btn-square-so-pop:active {
+  /*押したとき*/
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
