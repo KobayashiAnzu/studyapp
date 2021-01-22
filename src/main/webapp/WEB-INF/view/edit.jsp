@@ -25,7 +25,7 @@
             意味：<form:input path="mean" class="in"/><form:errors path="mean" /><br>
 
 			カテゴリ：
-		　  <select name="category" class="in"">
+		　  <select name="category" class="in">
 			   <option value="挨拶">挨拶</option>
 			   <option value="天候">天候</option>
 			   <option value="食べ物">食べ物</option>

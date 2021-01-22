@@ -6,6 +6,7 @@
 <spring:url value="/js" var="js" />
 <spring:url value="/korean" var="koreanUrl" />
 <spring:url value="/images" var="images" />
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -14,8 +15,9 @@
 <link rel="stylesheet" href="${css}/add.css" />
 </head>
 <body>
+<p><a href="${koreanUrl}"><img src="${images}/arrow.png" alt="" /></a></p>
 
-
+<div class="main">
 <form:form action="" method="post" modelAttribute="korean">
 
 
@@ -50,11 +52,15 @@
 			   <option value="その他">その他</option>
 		　 </select><br>
 
-		<input type="submit" />
+		<input type="submit" class="btn-square-so-pop" value="登録"/>
 
 </form:form>
+</div>
 
-<img src="${images}/keyboard.jpg" alt="キーボード" />
+
+
+
+<!-- <img src="${images}/keyboard.jpg" alt="キーボード" /> -->
 
 </body>
 </html>

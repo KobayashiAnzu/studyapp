@@ -61,7 +61,7 @@ public class KoreanController {
 		// DBにデータ追加
 		service.addKorean(korean);
 
-		return "redirect:/wordlist";
+		return "redirect:/korean";
 	}
 
 /**
