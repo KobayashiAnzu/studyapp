@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="${css}/add.css" />
 </head>
 <body>
-<p><a href="${koreanUrl}"><img src="${images}/arrow.png" alt="" /></a></p>
+
 
 <div class="main">
 <form:form action="" method="post" modelAttribute="korean">
@@ -54,8 +54,13 @@
 
 		<input type="submit" class="btn-square-so-pop" value="登録"/>
 
+
 </form:form>
 </div>
+
+
+<p><a href="${koreanUrl}"><img src="${images}/left-arrow.png" alt="" /></a></p>
+
 
 
 

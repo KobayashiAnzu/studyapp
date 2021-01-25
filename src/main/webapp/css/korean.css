@@ -100,7 +100,7 @@ textarea#textarea-with-border {
 }
 /* === フィルタボタン（カーソルオーバー時）======= */
 .tfImg:hover{
-  background : #FFD700;
+   background : #FFD700;
 }
 /* === フィルタボタン内の画像色（SVG）============ */
 .tfImg path{
@@ -148,8 +148,8 @@ textarea#textarea-with-border {
 /* === 含むボタンの入力エリア ==================== */
 .tfInStr{
   padding    : 5px 3px;
-  border-top : 1px solid #999;
-  border-bottom: 1px solid #999;
+  border-top : 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 .tfInStr input{
   box-sizing : border-box;

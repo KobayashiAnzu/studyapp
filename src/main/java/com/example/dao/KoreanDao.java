@@ -11,12 +11,6 @@ public interface KoreanDao {
     //全てのデータの取得
 	List<Korean> selectAll() throws Exception;
 
-	//ランダムに並べ替えて取得
-	List<Korean> selectByRandom() throws Exception;
-
-	//カテゴリ別に取得
-	List<Korean> selectByCategory(String category) throws Exception;
-
 	//ID別取得
 	Korean selectById(Integer id) throws Exception;
 

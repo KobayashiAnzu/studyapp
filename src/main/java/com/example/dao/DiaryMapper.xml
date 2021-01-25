@@ -5,6 +5,7 @@
 	<!-- 全件取得 -->
 	<select id="selectAll" resultType="com.example.domain.Diary">
 		SELECT * FROM diary
+		ORDER BY created DESC;
 	</select>
 
 	<!-- ID別に取得 -->
@@ -13,16 +14,6 @@
 		SELECT * FROM diary
 		WHERE id = #{id}
 	</select>
-
-	<!-- 日付別に取得 -->
-	<select id="selectByCreated" resultType="com.example.domain.Diary"
-		parameterType="date">
-		<![CDATA[
-		SELECT * FROM diary
-		WHERE created >= #{created}
-        AND created < #{created}
-        ]]>
-    </select>
 
 
 	<!-- 追加 -->

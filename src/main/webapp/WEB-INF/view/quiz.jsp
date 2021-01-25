@@ -1,17 +1,23 @@
 <%@ page pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<!--  パスをコンテキストルートを含めた形に変換 -->
+<spring:url value="/css" var="css" />
+<spring:url value="/js" var="js" />
+<spring:url value="/home" var="homeUrl" />
+<spring:url value="/images" var="images" />
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <title>単語クイズ</title>
 
-<link rel="stylesheet" href="css/quiz.css">
+<link rel="stylesheet" href="${css}/quiz.css">
 </head>
 <body>
 
 
-	<main>
+	<div class="main">
 		<c:forEach items="${koreans}" var="korean">
 			<div id="sampleBox" class="article"
 				style="width: 300px; border: 1px solid #gray; padding: 10px;">
@@ -65,7 +71,11 @@
 		| <a href="?page=<c:out value="${page + 1}" />">次</a>
 			</c:otherwise>
 		</c:choose>
-	</main>
+	</div>
+
+<div class="b">
+	<p><a href="${homeUrl}"><img src="${images}/left-arrow.png" alt="HOME" /></a></p>
+</div>
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script>
 		$(document).ready(function() {

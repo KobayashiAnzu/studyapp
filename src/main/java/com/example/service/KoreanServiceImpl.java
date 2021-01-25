@@ -22,17 +22,6 @@ public class KoreanServiceImpl implements KoreanService{
 		return koreanDao.selectAll();
 	}
 
-	//ランダムに全件取得
-	@Override
-	public List<Korean> getKoreanByRandom() throws Exception {
-        return koreanDao.selectByRandom();
-	}
-
-	//カテゴリ別に取得
-	@Override
-	public List<Korean> getKoreanByCategory(String category) throws Exception {
-	    return koreanDao.selectByCategory(category);
-	}
 
 	//ID別に取得
 	@Override
@@ -71,11 +60,6 @@ public class KoreanServiceImpl implements KoreanService{
 	public void deleteKorean(Integer id) throws Exception {
 		koreanDao.delete(id);
 	}
-
-
-
-
-
 
 
 }

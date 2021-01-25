@@ -7,11 +7,6 @@
 		SELECT * FROM korean
 	</select>
 
-	<!-- ランダムに全件取得 -->
-	<select id="selectByRandom"
-		resultType="com.example.domain.Korean">
-		SELECT * FROM korean ORDER BY RAND();
-	</select>
 
 	<!-- ID別に取得 -->
 	<select id="selectById" resultType="com.example.domain.Korean"
@@ -20,21 +15,15 @@
 		WHERE id = #{id}
 	</select>
 
-    <!-- カテゴリ別に取得 -->
-	<select id="selectByCategory" resultType="com.example.domain.Korean"
-	    parameterType="string">
-	    SELECT * FROM korean
-	    WHERE category = #{category}
-	</select>
 
-	<!-- ページネーション関係 -->
+	<!-- ランダムに取得し、ページネーションする-->
 	<select id="count" resultType="long">
 		SELECT COUNT(*) FROM korean
 	</select>
 
 	<select id="selectLimited"
 		resultType="com.example.domain.Korean">
-		SELECT * FROM korean
+		SELECT * FROM korean ORDER BY RAND()
 		LIMIT #{offset}, #{num}
 	</select>
 

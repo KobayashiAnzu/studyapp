@@ -5,6 +5,7 @@
 <spring:url value="/css" var="css" />
 <spring:url value="/js" var="js" />
 <spring:url value="/korean" var="koreanUrl" />
+<spring:url value="/images" var="images" />
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -53,6 +54,6 @@
 		<input type="submit" class="btn-square-so-pop"/>
 </form:form>
 
-<p><a href="${koreanUrl}">←</a></p>
+<p><a href="${koreanUrl}"><img src="${images}/left-arrow.png" alt="" /></a></p>
 </body>
 </html>

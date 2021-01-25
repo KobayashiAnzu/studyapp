@@ -5,6 +5,7 @@
 <spring:url value="/css" var="css" />
 <spring:url value="/js" var="js" />
 <spring:url value="/diary" var="diaryUrl" />
+<spring:url value="/images" var="images" />
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -17,9 +18,7 @@
 <div class="main">
 	<form:form action="" method="post" modelAttribute="diary">
 
-			タイトル：<form:input path="title"  class="in"/><br>
-
-			気分：
+			気分・カテゴリ：
 			<select name="feeling" class="in">
 			 <option value="&#x1f600;">&#x1f600;</option>
 			 <option value="&#x1f923;">&#x1f923;</option>
@@ -31,13 +30,16 @@
 			 <option value="&#x1f621;">&#x1f621;</option>
 			</select><br>
 
-			本文：<form:input path="contents"  class="in"/><br>
+			タイトル：<form:input path="title"  class="in"/><br>
+
+
+　　　　　　本文：<form:textarea path="contents" cols="45" rows="40" class="in"/><br>
 
 
 		<input type="submit" class="btn-square-so-pop"/>
 	</form:form>
 </div>
 
-	<p><a href="${diaryUrl}">←</a></p>
+<p><a href="${diaryUrl}"><img src="${images}/left-arrow.png" alt="戻る" /></a></p>
 </body>
 </html>

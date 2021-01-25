@@ -52,3 +52,24 @@ body{
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
 }
 
+textarea {
+  resize: none;
+	width: 400px;
+	height: 50px;
+}
+
+a{
+	color:gray;
+
+}
+
+a:hover {
+   font-size: 25px;
+}
+
+p{
+	text-align: right;
+	margin-right:15px;
+}
+
+

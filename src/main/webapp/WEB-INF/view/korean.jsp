@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link text-light" href="home">Home</a>
+                    <a class="nav-link text-light" href="home">HOME</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="korean/add">単語の追加</a>
